@@ -21,7 +21,13 @@ namespace ElectricsOnlineWebApp.Controllers
         {
             get
             {
-                return _ctx.ShoppingCartDatas.ToList();
+                try
+                {
+                    return _ctx.ShoppingCartDatas.ToList();
+                }
+                catch (Exception e) { }
+
+                return null;
             }
         }
 
@@ -29,7 +35,13 @@ namespace ElectricsOnlineWebApp.Controllers
         {
             get
             {
-                return Cart.Sum(c => c.Quantity * c.UnitPrice);
+                try
+                {
+                    return Cart.Sum(c => c.Quantity * c.UnitPrice);
+                }
+                catch (Exception e) { }
+
+                return 0;
             }
         }
     }

@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -277,7 +278,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Images\Products\huawei_p20.jpg" />
+    <Content Include="Images\Products\huawei_p20_pro.jpg" />
+    <Content Include="Images\Products\iphone-x-space-grey.png" />
+    <Content Include="Images\Products\iphone7_rosegold.jpg" />
+    <Content Include="Images\Products\iphone7_silver.jpg" />
+    <Content Include="Images\Products\lg_v30.jpg" />
     <Content Include="Images\Products\noimage.png" />
+    <Content Include="Images\Products\samsung_note_9_blue.jpg" />
+    <Content Include="Images\Products\samsung_s9_blue.jpg" />
+    <Content Include="Images\Products\samsung_s9_purple.jpg" />
+    <Content Include="Images\Products\xiaomi_mi8.jpg" />
     <Content Include="Images\Suppliers\Breville.jpg" />
     <Content Include="Images\Suppliers\LG.jpg" />
     <Content Include="Model.Context.tt">
@@ -330,7 +342,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
