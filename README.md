@@ -1,7 +1,7 @@
 # Simple .NET MVC5 Shopping Cart
 An experimental online shopping cart project using C# .NET MVC5, MSSQL, HTML5, CSS3 and JavaScript
 
-![alt tag](https://raw.githubusercontent.com/mrjcka/Simple-.NET-MVC-5-Shopping-Cart/master/demo.PNG)
+![alt tag](https://raw.githubusercontent.com/mesutucar/Simple-.NET-MVC-5-Shopping-Cart/master/demo.PNG)
 
 ## Installation
 
