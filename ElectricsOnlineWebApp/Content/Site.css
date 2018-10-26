@@ -77,15 +77,10 @@
     margin: 10px 10px 40px 10px;
     padding: 20px 20px 40px 20px;
     border: 1px solid #0B7FD2;
+    min-width:270px;
 }
 
-.list-item .p-cat {
-    color: #0B7FD2;
-    display: inline-block;
-    padding: 9px 0;
-    font-size: .8em;
-    font-weight: bold;
-}
+
 img {
     max-height: 100px;
     max-width: 100px;
@@ -108,8 +103,6 @@ img {
     vertical-align: bottom;
     margin-top: 10px;
 }
-
-
 .list-item .add-to-cart a {
     border: 1px solid #0B7FD2;
     padding: 10px;
@@ -131,12 +124,6 @@ img {
     font-weight: bold;
     font-size: .9em;
     padding: 10px;
-}
-.list-item .p-unit {
-    float: right;
-    font-weight: bold;
-    font-size: .8em;
-    vertical-align: bottom;
 }
 
 

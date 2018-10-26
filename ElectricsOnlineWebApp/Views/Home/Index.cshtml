@@ -16,24 +16,15 @@ else
     <div>
         @foreach (var item in ViewBag.Products)
         {
-            <div class="col-sm-4">
+            <div class="col-sm-4" style="min-width: 300px;">
                 <div class="list-item">
-
-                    <div>
-                        <a href=@item.Brand><img src=@item.Brand></a>
+                    <a href=@item.Brand><img src=@item.Brand></a>
+                    <span class="p-name">@item.PName</span>
+                    <span class="p-description">@item.Description</span>
+                    <div class="add-to-cart">
+                        @Html.ActionLink("add to cart", "AddToCart", "Home", new { id = item.PID }, null)
+                        <span class="p-price">@String.Format("{0:c}", item.UnitPrice)</span>
                     </div>
-
-                    <div>
-                        <span class="p-name">@item.PName</span>
-                        <span class="p-description">@item.Description</span>
-                        <div class="add-to-cart">
-                            @Html.ActionLink("add to cart", "AddToCart", "Home", new { id = item.PID }, null)
-                            <span class="p-price">@String.Format("{0:c}", item.UnitPrice)</span>
-                        </div>
-                    </div>
-
-
-
                 </div>
             </div>
         }
