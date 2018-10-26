@@ -5,22 +5,8 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .navbar-theme {
@@ -86,28 +72,11 @@ textarea {
     padding: 10px 20px;
 }
 
-/* Product page */
-.list-view {
-    display: flex;
-    flex-wrap: wrap
-}
+
 .list-item {
-    width: calc(100% / 3 - 34px);
-    margin: 20px 25px;
-    /*opacity: .8;*/
-    transition: .3s;
-    -webkit-transition: .3s;
-    padding: 20px;
+    margin: 10px 10px 40px 10px;
+    padding: 20px 20px 40px 20px;
     border: 1px solid #0B7FD2;
-}
-.list-item:hover {
-    opacity: 1
-}
-.list-item:nth-child(3n+1) {
-    margin-left: 0;
-}
-.list-item:nth-child(3n) {
-    margin-right: 0
 }
 
 .list-item .p-cat {
@@ -117,11 +86,11 @@ textarea {
     font-size: .8em;
     font-weight: bold;
 }
-.list-item .p-brand {
-    color: #0B7FD2;
-    font-size: .8em;
-    font-weight: bold;
-    padding: 7px;
+img {
+    max-height: 100px;
+    max-width: 100px;
+    height: auto;
+    width: auto;
     float: right;
 }
 .list-item .p-name {
@@ -130,7 +99,6 @@ textarea {
     margin: 5px 0;
 }
 .list-item .p-description {
-    /*font-size: 0.9em;*/
     color: #808080;
     margin-bottom: 10px;
     display: block;
